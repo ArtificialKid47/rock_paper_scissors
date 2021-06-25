@@ -21,7 +21,7 @@
         return computerSign;
       }
       function playRound(playerSelection,computerSelection) {
-          let result = 0
+          let result = 0;
           if (playerSelection === computerSelection) {
               result = "It's a draw!";
           } else if (playerSelection == "Rock" && computerSelection == "Paper") {
@@ -37,10 +37,12 @@
           } else if (playerSelection == "Scissors" && computerSelection == "Paper"){
               result = "You win!";
           }
+          console.log(result);  
           return result;
         }        
-      const playerSelection = prompt("Enter your play");
-      const computerSelection = computerPlay();
+      const playerSelection = prompt("Chose your play")
+      const computerSelection = computerPlay()
+      playRound(playerSelection,computerSelection)
       
   </script>
 </body>
