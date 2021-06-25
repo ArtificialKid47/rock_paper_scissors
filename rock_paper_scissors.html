@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <script>
+      function computerPlay() {
+          let computerSign = 0; 
+          let computerRng = Math.floor(Math.random()*3);
+          if (computerRng == 0) { 
+              computerSign = "Rock";
+          }
+          else if (computerRng == 1) {
+              computerSign = "Paper";
+          }
+          else if (computerRng == 2) {
+              computerSign = "Scissors";
+          }
+        return computerSign;
+      }
+      function playRound(playerSelection,computerSelection) {
+          let result = 0
+          if (playerSelection === computerSelection) {
+              result = "It's a draw!";
+          } else if (playerSelection == "Rock" && computerSelection == "Paper") {
+              result = "You lose!";
+          } else if (playerSelection == "Rock" && computerSelection == "Scissors"){
+              result = "You win!";
+          } else if (playerSelection == "Paper" && computerSelection == "Rock"){
+              result = "You lose!";
+          } else if (playerSelection == "Paper" && computerSelection == "Scissors"){
+              result = "You win!";
+          } else if (playerSelection == "Scissors" && computerSelection == "Rock"){
+              result = "You lose!";
+          } else if (playerSelection == "Scissors" && computerSelection == "Paper"){
+              result = "You win!";
+          }
+          return result;
+        }        
+      const playerSelection = prompt("Enter your play");
+      const computerSelection = computerPlay();
+      
+  </script>
+</body>
+</html>
+   
