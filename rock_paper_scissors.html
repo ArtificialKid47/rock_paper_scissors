@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <title></title>
 </head>
 <body>
-<button type="button" id="rock_button">✊</button>
-<button type="button" id="paper_button">✋</button>
-<button type="button" id="scissors_button">✌️</button>
-<script src = "rps_script.js"> </script>
+<div id="main_div">
+  <div id="containerConfetti">
+  </div>
+  <h1>ROCK PAPER SCISSORS</h1>
+  <h2>First to 5 wins!</p>
+  <button type="button" class="rps_button" id="rock_button"><img src="images/rock.png"></button>
+  <button type="button" class="rps_button" id="paper_button"><img src="images/paper.png"></button>
+  <button type="button" class="rps_button" id="scissors_button"><img src="images/scissors.png"></button>
+  <div id="results_div">
+  </div>
+  <div>
+  <button type="button" id="new_game"><p>New Game?</p></button>
+  </div>
+</div>
+<script src="rps_script.js"></script>
 </body>
 </html>
-    
